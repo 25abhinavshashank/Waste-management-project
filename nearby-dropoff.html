@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearby Drop-off Points</title>
+  <link rel="stylesheet" href="styles-nearby.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Find Nearby Drop-off Points for Recyclables</h1>
+      <p class="subtitle">
+        Discover recycling centers, e-waste hubs, and drop-off points near you. Contribute to a sustainable future!
+      </p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="search-section">
+      <div class="container">
+        <form action="#" method="GET" class="search-form">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Enter your location"
+            required
+          />
+          <select name="waste-type" id="waste-type">
+            <option value="all">All Types</option>
+            <option value="plastic">Plastic</option>
+            <option value="paper">Paper</option>
+            <option value="e-waste">E-Waste</option>
+            <option value="organic">Organic Waste</option>
+          </select>
+          <button type="submit" class="btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="container">
+        <h2>Nearby Drop-off Points</h2>
+        <div class="dropoff-cards">
+          <div class="card">
+            <h3>Green Recycling Center</h3>
+            <p>Address: 123 Green Street, EcoCity</p>
+            <p>Accepts: Plastic, Paper</p>
+          </div>
+          <div class="card">
+            <h3>Urban E-Waste Hub</h3>
+            <p>Address: 456 Tech Avenue, RecycleTown</p>
+            <p>Accepts: E-Waste</p>
+          </div>
+          <div class="card">
+            <h3>Sustainable Drop-Off</h3>
+            <p>Address: 789 Earth Blvd, GreenCity</p>
+            <p>Accepts: Organic Waste</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 EcoBin. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
